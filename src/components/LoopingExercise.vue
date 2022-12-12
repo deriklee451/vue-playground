@@ -15,18 +15,18 @@
           </p>
           <!-- add the v-for to player-card -->
           <div class="player-card text-center">
-            <h5>{{}}</h5>
+            <h5>Player{{ }}</h5>
             <div>
               <img class="img" src="" />
             </div>
             <div>
-              <span>{{}}</span>
+              <span>{{ }}</span>
             </div>
             <div>
-              <span>{{}}</span>
+              <span>{{ }}</span>
             </div>
             <div>
-              <span>{{}}</span>
+              <span>{{ player.number }}</span>
             </div>
           </div>
         </div>
@@ -39,7 +39,7 @@
             value contained at that key.
           </p>
           <div class="blog" v-for="(value, key) in state.blog" :key="key">
-            <p>{{}}: {{}}</p>
+            <p>{{}}: {{ }}</p>
           </div>
         </div>
       </div>
